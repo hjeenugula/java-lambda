@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    tools {
-       maven 'mvn'
-    }
+  //  tools {
+  //     maven 'mvn'
+//    }
 
      options {
         //Disable concurrentbuilds for the same job
@@ -26,7 +26,7 @@ pipeline {
             agent any
             steps {
                 echo 'Build'
-                sh 'mvn clean install -Dmaven.test.skip=true'             
+             //   sh 'mvn clean install -Dmaven.test.skip=true'             
             }
         }
 
