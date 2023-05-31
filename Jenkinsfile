@@ -23,7 +23,7 @@ pipeline {
             agent any
             steps {
                 echo 'Build'
-                sh '/usr/bin/mvn clean install -Dmaven.test.skip=true'             
+                sh 'mvn clean install -Dmaven.test.skip=true'             
             }
         }
 
