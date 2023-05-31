@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+       mvn=mvn
+    }
 
      options {
         //Disable concurrentbuilds for the same job
